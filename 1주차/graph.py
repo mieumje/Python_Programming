@@ -25,7 +25,20 @@ plt.ylabel('유동 인구수', fontsize=12)  # y 축 제목
 # y축에 표시할 유동 인구 데이터 입력
 a = [242, 256, 237, 223, 263, 81, 46]
 
-plt.scatter(x_data, a, c="red", label="유동인구")
-plt.plot(x_data, a, c="red")
+weekday_size = 5  # 주중 데이터
+weekday_sum = 0
+weekday_avg = 0
+
+for i in range(0, weekday_size):
+    weekday_sum = weekday_sum + a[i]
+
+weekday_avg = weekday_sum / weekday_size
+
+print('주중 유동 인구 = ', a[0:5])
+print('주중 유동 인구 합계 = ', weekday_sum)
+print('주중 유동 인구 평균 = ', weekday_avg)
+
+plt.scatter(x_data, a, c="red", label="유동인구")  # 산점도 표시
+plt.plot(x_data, a, c="red")  # 꺾은선 그래프
 plt.legend()
 plt.show()
