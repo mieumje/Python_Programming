@@ -1,5 +1,5 @@
 # 그래프를 그리기 위한 모듈 선언
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from matplotlib import font_manager, rc
 
 
@@ -13,3 +13,11 @@ font_name = font_manager.FontProperties(fname=font_path).get_name()
 # font_manager를 통해 font_path에 있는 font의 이름을 가져온다.
 rc('font', family=font_name)
 # rc를 통해 font를 설정한다.
+
+
+x_data = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+# x축에 표시할 제목 리시트에 저장
+
+plt.title('일주일간 유동 인구수 데이터', fontsize=16)  # 큰 제목
+plt.xlabel('요일', fontsize=12)  # x축 제목
+plt.ylabel('유동 인구수', fontsize=12)  # y 축 제목
