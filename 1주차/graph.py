@@ -6,3 +6,10 @@ from matplotlib import font_manager, rc
 # matplotlib는 파이썬에서 매트랩과 유사한 그래프 표시를 가능하게 하는 라이브러리
 # matplotlib에서 한글 폰트가 깨지는 경우가 있어 font_manager를 통해 한글 폰트를 등록한다
 # 컴퓨터에 등록된 한글 폰트 목록은 [C:/Windows/Fonts/]에서 확인 할 수 있다.
+
+font_path = 'C:/Windows/Fonts/HancomEQN.ttf'  # 컴퓨터에 설치된 폰트 경로
+
+font_name = font_manager.FontProperties(fname=font_path).get_name()
+# font_manager를 통해 font_path에 있는 font의 이름을 가져온다.
+rc('font', family=font_name)
+# rc를 통해 font를 설정한다.
