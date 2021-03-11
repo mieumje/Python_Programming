@@ -25,7 +25,7 @@ plt.ylabel('유동 인구수', fontsize=12)  # y 축 제목
 # y축에 표시할 유동 인구 데이터 입력
 a = [242, 256, 237, 223, 263, 81, 46]
 
-plt.scatter(x_data, a)
-plt.plot(x_data, a)
-
+plt.scatter(x_data, a, c="red", label="유동인구")
+plt.plot(x_data, a, c="red")
+plt.legend()
 plt.show()
