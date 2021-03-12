@@ -2,7 +2,7 @@ f = 'banana'
 count = 0
 for c in f:
     count += 1
-print(count)
+print(f"banana의 문자 개수 = {count}")
 
 
 a = 'apple'
