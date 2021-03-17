@@ -9,7 +9,10 @@ print(a)
  """
 c = []
 for i in a:
+    y = ""
     for x in i:
         if x >= "A" and x <= "Z":
-            print(x, end="")
-        print(end=" ")
+            """ print(x, end="") """
+            y = y + x
+    if y != "":
+        print(y, end=" ")
