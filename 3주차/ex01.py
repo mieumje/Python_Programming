@@ -21,8 +21,10 @@ else:
 print(f"s > apple : {s > 'apple'}")
 print(f"s < apple : {s < 'apple'}")
 print(f"Hi > Hii : {'Hi' > 'Hii'}")
-print(f"Hi > Hi : {'Hi' > 'HI'}")
-print(f"hi == HI : {'hi' > 'HI'}\n")
+print(f"Hi > HI : {'Hi' > 'HI'}")
+print(f"hi == HI : {'hi' == 'HI'}\n")
+print("문자열의 대소비교 : ")
+print("문자인 경우는 ASCII 숫자로 변환되서 맨앞 문자부터 비교한다.\n")
 
 print(f"문자 H의 ASCII 코드 값 : {ord('H')}")
 print(f"ASCII 코드 값 72 : {chr(72)}")
