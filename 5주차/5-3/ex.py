@@ -16,7 +16,6 @@ extract_card = section.find_all(
     "article", {"class": "flea-market-article flat-card"})
 
 title = []
-region = []
 
 
 for x in extract_card:
