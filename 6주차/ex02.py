@@ -37,10 +37,10 @@ write_ws['B1'] = '가격'
 write_ws['C1'] = '위치'
 
 
-for i in range(0, len(card)):
+for i in range(0, len(t)):
     write_ws.append([t[i], p[i], l[i]])
 
-write_wb.save('C:/Users/82105/Desktop/파이썬 프로그래밍/Python_Programming/당근.xlsx')
+write_wb.save('C:/Users/82105/Desktop/파이썬 프로그래밍/Python_Programming/당근2.xlsx')
 
 """ def save_csv(item):
     file = open("articles.csv", mode="w", encoding="utf-8")
